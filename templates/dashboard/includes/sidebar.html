@@ -1,0 +1,87 @@
+{% load static %}
+<!-- [ navigation menu ] start -->
+<nav class="pcoded-navbar menupos-fixed menu-light ">
+    <div class="navbar-wrapper  ">
+        <div class="navbar-content scroll-div " >
+            <ul class="nav pcoded-inner-navbar ">
+                <li class="nav-item pcoded-menu-caption">
+                    <label>Navigation</label>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'dashboard:dashboard' %}" class="nav-link ">
+                            <span class="pcoded-micon">
+                                <i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
+                </li>
+
+
+
+                <li class="nav-item pcoded-menu-caption">
+                    <label>UI Element</label>
+                </li>
+                <li class="nav-item pcoded-hasmenu">
+                    <a href="javascript:void(0);" class="nav-link "><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">Basic</span></a>
+                    <ul class="pcoded-submenu">
+                        <li><a href={% url 'dashboard:alert' %}>Alert</a></li>
+                        <li><a href={% url 'dashboard:button' %}>Button</a></li>
+                        <li><a href={% url 'dashboard:badge' %}>Badges</a></li>
+                        <li><a href={% url 'dashboard:pagination' %}>Pagination</a></li>
+                        <li><a href={% url 'dashboard:card' %}>Cards</a></li>
+                        <li><a href={% url 'dashboard:collapse' %}>Collapse</a></li>
+                        <li><a href={% url 'dashboard:carousel' %}>Carousel</a></li>
+                        <li><a href={% url 'dashboard:grid' %}>Grid system</a></li>
+                        <li><a href={% url 'dashboard:progress' %}>Progress</a></li>
+                        <li><a href={% url 'dashboard:modal' %}>Modal</a></li>
+                        <li><a href={% url 'dashboard:spinner' %}>Spinner</a></li>
+                        <li><a href={% url 'dashboard:tabs' %}>Tabs & pills</a></li>
+                        <li><a href={% url 'dashboard:typography' %}>Typography</a></li>
+                        <li><a href={% url 'dashboard:tooltip' %}>Tooltip & popovers</a></li>
+                        <li><a href={% url 'dashboard:toast' %}>Toasts</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item pcoded-menu-caption">
+                    <label>Forms &amp; table</label>
+                </li>
+                <li class="nav-item">
+                    <a href={% url 'dashboard:form' %} class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Forms</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href={% url 'dashboard:table' %} class="nav-link "><span class="pcoded-micon"><i class="feather icon-align-justify"></i></span><span class="pcoded-mtext">Bootstrap table</span></a>
+                </li>
+                <li class="nav-item pcoded-menu-caption">
+                    <label>Chart & Maps</label>
+                </li>
+                <li class="nav-item">
+                    <a href={% url 'dashboard:chart' %} class="nav-link "><span class="pcoded-micon"><i class="feather icon-pie-chart"></i></span><span class="pcoded-mtext">Chart</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href={% url 'dashboard:map' %} class="nav-link "><span class="pcoded-micon"><i class="feather icon-map"></i></span><span class="pcoded-mtext">Maps</span></a>
+                </li>
+                <li class="nav-item pcoded-menu-caption">
+                    <label>Pages</label>
+                </li>
+                <li class="nav-item pcoded-hasmenu">
+                    <a href="javascript:void(0);" class="nav-link "><span class="pcoded-micon"><i class="feather icon-lock"></i></span><span class="pcoded-mtext">Authentication</span></a>
+                    <ul class="pcoded-submenu">
+                        <li><a href={% url 'dashboard:login' %} target="_blank">Sign up</a></li>
+                        <li><a href={% url 'dashboard:register' %} target="_blank">Sign in</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="sample-page.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Sample page</span></a></li>
+
+            </ul>
+
+            <div class="card text-center">
+                <div class="card-block">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <i class="feather icon-sunset f-40"></i>
+                    <br />
+                    <p>Need more? Go PRO!</p>
+                    <a target="_blank" rel="noopener noreferrer"
+                       href="https://appseed.us/admin-dashboards?ref=j2-grad-demo"
+                       class="btn btn-primary btn-sm text-white m-0">Admin Dashboards</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</nav>

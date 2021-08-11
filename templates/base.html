@@ -1,0 +1,75 @@
+{% load static %}
+{% block html %}
+   <!DOCTYPE html>
+<html lang="en">
+{% block head %}
+    <head>
+        <title>
+            Jinja2 GradientAble -  Dashboard  | AppSeed
+        </title>
+       
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="">
+        <meta name="author" content="Codedthemes" />
+        <!-- Favicon icon -->
+        <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+
+        <!-- vendor css -->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+        <!-- Specific CSS goes HERE -->
+       {% block extra_css %}
+       
+       {% endblock extra_css %}
+
+    </head>
+{% endblock head %}
+{% block body %}
+<body class="">
+
+<!-- [ Pre-loader ] start -->
+<div class="loader-bg">
+    <div class="loader-track">
+        <div class="loader-fill"></div>
+    </div>
+</div>
+<!-- [ Pre-loader ] End -->
+{% include 'dashboard/includes/sidebar.html' %}
+{% include 'dashboard/includes/header.html' %}
+
+{% block content %}
+
+{% endblock content %}
+
+{% block script %}
+<script src="{% static 'js/vendor-all.min.js' %}"></script>
+<script src="{% static 'js/plugins/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/pcoded.min.js' %}"></script>
+
+<!-- Specific Page JS goes HERE  -->
+
+
+<!-- Apex Chart -->
+<script src="{% static 'js/plugins/apexcharts.min.js' %}"></script>
+<!-- custom-chart js -->
+<script src="{% static 'js/pages/dashboard-main.js' %}"></script>
+<script src="{% static 'js/pages/chart-apex.js' %}"></script>
+
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script src="https://maps.google.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+    <script src="{% static 'js/plugins/gmaps.min.js' %}"></script>
+    <script src="{% static 'js/pages/google-maps.js' %}"></script>
+
+{% endblock script %}
+
+</body>
+
+{% endblock body %}
+
+</html>
+  
+
+{% endblock html %}
